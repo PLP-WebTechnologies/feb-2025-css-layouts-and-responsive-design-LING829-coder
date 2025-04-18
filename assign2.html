@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <head>
+        <link rel="stylesheet" href="c.css">
+        
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="logo">MySite</div>
+        <div class="menu-toggle">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <div class="card hero">
+            <h2>Welcome to Our Website</h2>
+            <p>Its time to learn css and responsive website.</p>
+        </div>
+        
+        <div class="features">
+            <div class="card">
+                <h2>Feature One</h2>
+                <p>its time to learn many things</p>
+            </div>
+            <div class="card">
+                <h2>Feature Two</h2>
+                <p>come and join us at plp.</p>
+            </div>
+            <div class="card">
+                <h2>Feature Three</h2>
+                <p>its time to venture in different fields of software engineering.</p>
+            </div>
+        </div>
+        
+    
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 MySite. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
